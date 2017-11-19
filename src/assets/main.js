@@ -57,7 +57,7 @@ function guess() {
     var win = false;
     var text = '<div class="row"><span class="col-md-6">' + param + '</span><div class="col-md-6">';
     for (var i = 0; i <= param.length; i++) {
-      if param.charAt(i) === answer.charAt(i) {
+      if (param.charAt(i) === answer.charAt(i)) {
         text += '<span class = "glyphicon glyphicon-ok" > </span>';
       } else if param.charat(i).indexOf(answer) {
         '<span class = "glyphicon glyphicon-transfer"> </span>';
