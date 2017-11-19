@@ -24,8 +24,7 @@ function guess() {
     showAnswer(true);
     showReplay();
   }
-
-
+};
 
   //implement new functions here
 
@@ -33,19 +32,17 @@ function guess() {
     if (attempt.toString === "") {
       attempt = 0;
     }
-
     if (answer.toString === "") {
       answer = Math.floor(Math.random(0, 9999));
     }
-
     while (answer.toString().length() > 4) {
       answer += "0";
     }
-  }
+  };
 
   function setMessage(param) {
     message.innerHTML = param;
-  }
+  };
 
   function validateInput(param) {
     if (param.length === 4)
@@ -54,7 +51,7 @@ function guess() {
       setMessage("Guesses must be exactly 4 characters long.");
       return false;
     }
-  }
+  };
 
   function getResults(param) {
     var win = false;
@@ -75,7 +72,7 @@ function guess() {
     } else {
       return false;
     }
-  }
+  };
 
   function showAnswer(param) {
     code.innerHTML = answer.value;
@@ -84,10 +81,9 @@ function guess() {
     }else {
       code.className = "failure";
     }
-  }
+  };
 
   function showReplay(){
     guessingDiv.style.display = "none";
     replayDiv.style.display = "block";
-  }
-}
+  };
