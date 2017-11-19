@@ -24,7 +24,7 @@ function guess() {
     showAnswer(true);
     showReplay();
   }
-}
+
 
 
   //implement new functions here
@@ -44,9 +44,7 @@ function guess() {
   }
 
   function setMessage(param) {
-
     message.innerHTML = param;
-
   }
 
   function validateInput(param) {
@@ -92,3 +90,4 @@ function guess() {
     guessingDiv.style.display = "none";
     replayDiv.style.display = "block";
   }
+}
