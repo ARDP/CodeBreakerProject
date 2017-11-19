@@ -24,7 +24,7 @@ function guess() {
     showAnswer(true);
     showReplay();
   }
-
+}
 
 
   //implement new functions here
